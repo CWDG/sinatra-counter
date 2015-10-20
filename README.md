@@ -8,6 +8,14 @@ Make a simple Sinatra server that will increment a count whenever the site is vi
 - Increment the count every time a person visits the page
 - Display the count somewhere
 
+## Setup
+
+After cloning this repo, simply go into the directory where you cloned it and run:
+
+```bash
+$ bundle
+```
+
 ## Running the server
 
 Run the server with:
