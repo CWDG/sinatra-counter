@@ -8,6 +8,14 @@ Make a simple Sinatra server that will increment a count whenever the site is vi
 - Increment the count every time a person visits the page
 - Display the count somewhere
 
+## Running the server
+
+Run the server with:
+
+```bash
+$ ruby app.rb
+```
+
 ## Bonus points
 
 Here are some ideas for making this cooler:
