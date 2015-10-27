@@ -1,0 +1,82 @@
+body, html {
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  overflow: scroll;
+  color: #202225;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+div.main {
+  margin: 10vh auto 0;
+  max-width: 500px;
+  background-color: #EBEBF5;
+  background: linear-gradient(to bottom, #EBEBF5, white);
+  padding: 20px 50px;
+}
+
+label {
+  font-size: 18px;
+}
+
+input {
+  height: 35px;
+  border: solid 2px #000066;
+  font-size: 16px;
+  color: #000066;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+input#visitor-name {
+  width: 70%;
+  margin: 10px auto;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  border: 0;
+  font-size: 14px;
+  font-family: Arial;
+  text-align: center;
+}
+
+label, input, .button {
+  font-weight: bold;
+}
+
+div.button, input.button {
+  display: inline-block;
+  padding: 8px 15px;
+  background: #000066;
+  border: solid 1px dimgray;
+  border-radius: 5px;
+  height: auto !important;
+}
+
+div.button:hover, input.button:hover {
+  background: linear-gradient(to bottom, #000066, #333385);
+}
+
+span.info {
+  float: right;
+}
+
+img.info {
+  width: 30px;
+  height: 30px;
+  margin-right: -20px;
+  opacity: 0.75;
+}
+
+img.info:hover {
+  width: 35px;
+  height: 35px;
+  margin-top: -2.5px;
+  margin-right: -22.5px;
+  opacity: 1;
+}

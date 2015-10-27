@@ -1,0 +1,68 @@
+<head>
+  <title><%= title %></title>
+  <link rel="stylesheet" href="/css/main.css" type="text/css" />
+</head>
+<body>
+  <div class="main">
+    <h1>
+      <% if !wrongName %>
+        Hello, <%= name %>!
+      <% else %>
+        Nice try, <%= name %>... We still know it's you.
+      <% end %>
+    </h1>
+    <h2>
+      You have visted this page <%= count %> times!
+    </h2>
+    <p>
+      <% if count < 8 %>
+        Newbie
+      <% elsif count < 16 %>
+        Regular
+      <% elsif count < 25 %>
+        Frequent Flyer
+      <% elsif count < 40 %>
+        Wow.
+        <% if count > 28 %>
+          Such.
+        <% end %>
+        <% if count > 31 %>
+          Click.
+        <% end %>
+      <% elsif count < 50 %>
+        Aren't you getting bored of doing this yet?
+      <% elsif count < 60 %>
+        ...
+      <% elsif count < 65 %>
+        ???
+      <% elsif count < 75 %>
+        !!!
+      <% elsif count < 85 %>
+        I'm getting dizzy, <%= name %>...
+      <% elsif count < 95 %>
+        --___--
+      <% elsif count < 100 %>
+        Alright already! I'll give you something nice if you promise to stop...
+      <% else %>
+        Here, have a gold star for reaching 100 visits.
+        <br />
+        <img src="http://www.nimble.com/blog/wp-content/uploads/2013/08/goldstar.png" />
+      <% end %>
+    </p>
+    <a class="button" href="/person/<%= name %>">
+      <div class="button">
+        Moar!!
+      </div>
+    </a>
+    <a class="button" href="/forget" onclick="alert('Goodbye forever, <%= name %>!')">
+      <div class="button">
+        Forget Me
+      </div>
+    </a>
+    <a href="/info">
+      <span class="info">
+        <img class="info" src="http://findicons.com/files/icons/1261/sticker_system/128/get_info.png" />
+      </span>
+    </a>
+  </div>
+</body>
